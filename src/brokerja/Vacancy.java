@@ -30,4 +30,13 @@ public class Vacancy {
         this.description = desc;
         this.salary_category = salary;
     }
+
+    boolean isEquals(Vacancy v) {
+       if (this.job_title.equalsIgnoreCase(v.job_title) && this.company.equalsIgnoreCase(v.company) && this.location.equalsIgnoreCase(v.location)) {
+           return true;
+       } else {
+           return false;
+       } 
+       
+    }
 }
